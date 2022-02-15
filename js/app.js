@@ -1,21 +1,21 @@
 // // phone plus event listener
-document.getElementById('phone-plus').addEventListener('click', function () {
-    updateNumber('phone', 1219, true)
+// document.getElementById('phone-plus').addEventListener('click', function () {
+//     updateNumber('phone', 1219, true)
 
-})
-// phone minus event listenr.
-document.getElementById('phone-minus').addEventListener('click', function () {
-    updateNumber('phone', 1219, false)
-})
+// })
+// // phone minus event listenr.
+// document.getElementById('phone-minus').addEventListener('click', function () {
+//     updateNumber('phone', 1219, false)
+// })
 //case plus eventlistener
-document.getElementById('case-plus').addEventListener('click', function () {
-    updateNumber('case', 59, true)
-})
+// document.getElementById('case-plus').addEventListener('click', function () {
+//     updateNumber('case', 59, true)
+// })
 
-// case minius event listener
-document.getElementById('case-minus').addEventListener('click', function () {
-    updateNumber('case', 59, false)
-})
+// // case minius event listener
+// document.getElementById('case-minus').addEventListener('click', function () {
+//     updateNumber('case', 59, false)
+// })
 
 function updateNumber(product, price, isIncrease) {
     let productInput = document.getElementById(product + '-input')
@@ -31,6 +31,16 @@ function updateNumber(product, price, isIncrease) {
     productInput.value = output
 
     totalCalculation()
+}
+
+getEvenlis('phone-plus', 'phone', 1219, true)
+getEvenlis('phone-minus', 'phone', 1219, false)
+getEvenlis('case-plus', 'case', 59, true)
+getEvenlis('case-minus', 'case', 59, false)
+function getEvenlis(productId, updateNum, price, isIncrease) {  // enent listener shortcut
+    document.getElementById(productId).addEventListener('click', function () {
+        updateNumber(updateNum, price, isIncrease)
+    })
 }
 
 function totalCalculation() {
