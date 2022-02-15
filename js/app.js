@@ -1,20 +1,10 @@
 // // phone plus event listener
 document.getElementById('phone-plus').addEventListener('click', function () {
-    /* let phoneInput = document.getElementById('phone-input')
-    let phoneAmount = document.getElementById('phone-amount')
-    let output = parseFloat(phoneInput.value) + 1
-    phoneAmount.innerText = output * 1219
-    phoneInput.value = output */
     updateNumber('phone', 1219, true)
 
 })
 // phone minus event listenr.
 document.getElementById('phone-minus').addEventListener('click', function () {
-    /*  let phoneInput = document.getElementById('phone-input')
-     let phoneAmount = document.getElementById('phone-amount')
-     let output = parseFloat(phoneInput.value) - 1
-     phoneAmount.innerText = output * 1219
-     phoneInput.value = output */
     updateNumber('phone', 1219, false)
 })
 //case plus eventlistener
@@ -40,5 +30,19 @@ function updateNumber(product, price, isIncrease) {
     phoneAmount.innerText = output * price
     phoneInput.value = output
 
+    totalCalculation()
 }
+
+function totalCalculation() {
+    let caseAmount = document.getElementById('case-amount')
+    caseAmount * 59
+    let phoneAmount = document.getElementById('phone-amount')
+    phoneAmount * 1219
+
+    let subTotal = document.getElementById('subtotal').innerText = parseFloat(phoneAmount.innerText) + parseFloat(caseAmount.innerText)
+    let tax = subTotal / 10
+    document.getElementById('total').innerText = tax + subTotal
+}
+
+
 
