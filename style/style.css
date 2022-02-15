@@ -16,6 +16,9 @@ body{
 main{
     background-color: #f6f5fa;
     padding: 50px 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 .iphone-section{
     display: flex;
@@ -57,4 +60,30 @@ img{
         padding: 30px;
         font-size: 22px;
         font-weight: 600;
+    }
+    .total-text{
+        padding-left: 34px;
+    }
+    .total-price{
+        padding-right: 26px;
+    }
+    .total-price, .total-text p{
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .checkout-btn{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .checkout {
+        outline: none;
+        border: 0;
+        padding: 10px 30px;
+        background-color: green;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        display: flex;
     }
