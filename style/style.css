@@ -38,6 +38,7 @@ img{
 .right-side{
     display: flex;
     align-items: center;
+    width: 220px;
 }
 .header{
     margin: auto 0;
@@ -50,6 +51,16 @@ img{
     font-size: 15px;
     height: 30px;
     font-weight: 600;
+    display: block;
+    outline: none;
+    box-shadow: 0 -1px 3px rgb(0 0 0 / 20%);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+.input:focus {
+    border: 2px solid salmon;
+    padding: 2px;
+    color: #333;
 }
     .button {
         font-size: 30px;
