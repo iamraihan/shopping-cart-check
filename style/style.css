@@ -1,0 +1,60 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+body{
+    font-family: 'El Messiri', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main{
+    background-color: #f6f5fa;
+    padding: 50px 50px;
+}
+.iphone-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+img{
+    width: 125px;
+}
+.left-side{
+    display: flex;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+}
+.header{
+    margin: auto 0;
+    padding-left: 50px;
+}
+
+.input {
+    width: 45px;
+    text-align: center;
+    font-size: 15px;
+    height: 30px;
+    font-weight: 600;
+}
+    .button {
+        font-size: 30px;
+        padding: 10px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .price {
+        padding: 30px;
+        font-size: 22px;
+        font-weight: 600;
+    }
