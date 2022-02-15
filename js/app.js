@@ -18,17 +18,17 @@ document.getElementById('case-minus').addEventListener('click', function () {
 })
 
 function updateNumber(product, price, isIncrease) {
-    let phoneInput = document.getElementById(product + '-input')
-    let phoneAmount = document.getElementById(product + '-amount')
-    let output = phoneInput.value
+    let productInput = document.getElementById(product + '-input')
+    let productAmount = document.getElementById(product + '-amount')
+    let output = productInput.value
     if (isIncrease == true) {
-        output = parseFloat(phoneInput.value) + 1
+        output = parseFloat(productInput.value) + 1
     } else if (output > 0) {
-        output = parseFloat(phoneInput.value) - 1
+        output = parseFloat(productInput.value) - 1
     }
 
-    phoneAmount.innerText = output * price
-    phoneInput.value = output
+    productAmount.innerText = output * price
+    productInput.value = output
 
     totalCalculation()
 }
@@ -41,8 +41,10 @@ function totalCalculation() {
 
     let subTotal = document.getElementById('subtotal').innerText = parseFloat(phoneAmount.innerText) + parseFloat(caseAmount.innerText)
     let tax = subTotal / 10
+    document.getElementById('tax').innerText = tax
     document.getElementById('total').innerText = tax + subTotal
 }
+
 
 
 
